@@ -1,11 +1,11 @@
 /* 
-Theme Name: Hello Elementor Child
+Theme Name: CDCN
 Theme URI: https://github.com/elementor/hello-theme/
 Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
 Author: Elementor Team
 Author URI: https://elementor.com/
 Template: hello-elementor
-Version: 1.0.1
+Version: 1.0
 Text Domain: hello-elementor-child
 License: GNU General Public License v3 or later.
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -15,3 +15,350 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 /*
     Add your custom styles here
 */
+
+.eccent_header {
+    display: block;
+    width: 100%;
+    padding:0;
+    margin:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+}
+
+.eccent_header .eccent_header_row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.eccent_ui_container {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.menu-main-menu-container {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.eccent_header .eccent_header_row .ecc_col:first-of-type {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 15px;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.eccent_header_phone {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+    display: flex;
+    text-decoration: none;
+    flex-flow: row wrap;
+    background-color: #FDCA40;
+    border: 2px solid #FDCA40;
+    color: #2176FF;
+    align-items: center;
+    padding: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.eccent_header_phone:hover, .eccent_header_phone:active, .eccent_header_phone:focus {
+    opacity: 0.7;
+}
+
+.eccent_header_phone img {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+  display: inline-block;
+  filter: invert(31%) sepia(95%) saturate(1712%) hue-rotate(207deg) brightness(100%) contrast(102%);
+}
+
+.eccent_header_phone span {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #2176FF;
+}
+
+.eccent_logo_link {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+    display: inline-block;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    box-sizing: border-box;
+    margin:0;
+}
+
+.eccent_logo_link img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.eccent_logo_link:hover, .eccent_logo_link:active, .eccent_logo_link:focus {
+    opacity: 0.7;
+}
+
+.eccent_home_hero {
+    background: linear-gradient(257.91deg, #6DCBFF 7.38%, #33A1FD 28.32%, #2176FF 53.04%, #2130B5 90.63%);
+    overflow-y: hidden;
+}
+
+.eccent_highlight {
+    color: #FDCA40;
+}
+
+.eccent_header_toggle {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+    border: 2px solid #FFF;
+    width: 50px;
+    height: 54px;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    border-radius: 7px;
+    margin-left: 7px;
+}
+
+.eccent_header_toggle img {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    filter: invert(100%) sepia(25%) saturate(2%) hue-rotate(183deg) brightness(113%) contrast(100%);
+    transform: translate(-50%, -50%);
+}
+
+.eccent_header_toggle:hover, .eccent_header_toggle:active, .eccent_header_toggle:focus {
+  background-color: #FFF;
+}
+
+.eccent_header_toggle:hover img, .eccent_header_toggle:active img, .eccent_header_toggle:focus img {
+    filter: invert(31%) sepia(93%) saturate(1430%) hue-rotate(203deg) brightness(102%) contrast(102%);
+}
+
+@media(max-width: 767.9px) {
+    .eccent_ui_container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:first-of-type {
+        width: 60%;
+    }
+    
+    .eccent_header .eccent_header_row .ecc_col:last-of-type {
+        width: 40%;
+    }
+
+    .eccent_header_phone span {
+        display: none;
+    }
+
+    .eccent_header_phone img {
+        margin-right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .eccent_header_phone {
+        min-height: 50px;
+        min-width: 50px;
+    }
+}
+
+@media(max-width: 1024.9px) {
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu {
+        display: none;
+    }
+
+    .eccent_header_toggle {
+        display: inline-block;
+    }
+}
+
+@media(min-width: 768px) {
+    .eccent_header_phone span {
+        display: inline-block;
+    }
+
+    .eccent_header_phone img {
+        margin-right: 7px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024.9px) {
+    .eccent_ui_container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:first-of-type {
+        width: 50%;
+    }
+    
+    .eccent_header .eccent_header_row .ecc_col:last-of-type {
+        width: 50%;
+    }
+}
+
+@media(min-width: 1025px) {
+
+    .eccent_header_toggle {
+        display: none;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    /* Desktop Menu */
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu {
+        display: flex;
+        flex-flow: row wrap;
+        width: auto;
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li {
+        display: inline-block;
+        width: auto;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li:last-of-type {
+        margin-right: 0;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li a {
+        -webkit-transition: all 0.3s 0s ease;
+        -moz-transition: all 0.3s 0s ease;
+        -o-transition: all 0.3s 0s ease;
+        transition: all 0.3s 0s ease;
+        display: block;
+        padding: 12px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #FFF;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li a:after {
+        -webkit-transition: all 0.3s 0s ease;
+        -moz-transition: all 0.3s 0s ease;
+        -o-transition: all 0.3s 0s ease;
+        transition: all 0.3s 0s ease;
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        transform-origin: center;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0.1);
+        opacity: 0;
+        background-color: #FDCA40;
+        visibility: hidden;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li.current-menu-item a {
+        color: #FDCA40;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li.current-menu-item a:after {
+        visibility: visible;
+        transform: translateX(-50%) scaleX(1.0);
+        opacity: 1;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li:not(.current-menu-item) a:hover:after, 
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li:not(.current-menu-item) a:active:after,
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li:not(.current-menu-item) a:focus:after {
+        visibility: visible;
+        transform: translateX(-50%) scaleX(1.0);
+        opacity: 1;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li:not(.current-menu-item) a:hover, 
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li:not(.current-menu-item) a:active,
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.menu li:not(.current-menu-item) a:focus {
+        color: #FDCA40;
+    }
+
+    /* End Desktop Menu */
+
+    .eccent_ui_container {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:first-of-type {
+        width: 18%;
+    }
+    
+    .eccent_header .eccent_header_row .ecc_col:last-of-type {
+        width: 82%;
+    }
+
+    .eccent_home_hero_image .elementor-widget-container img {
+        transform-origin: bottom right;
+    }
+}
