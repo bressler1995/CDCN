@@ -10,6 +10,9 @@
  *
  * @return void
  */
+
+include('custom-shortcodes.php');
+
 function hello_elementor_child_enqueue_scripts() {
 	wp_enqueue_style(
 		'hello-elementor-child-style',
@@ -21,6 +24,24 @@ function hello_elementor_child_enqueue_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
+
+function eccentrik_ui_function() {
+	wp_register_script('eccentrik_ui', get_stylesheet_directory_uri() . '/uicontrol.js', array( 'jquery'),'1.0', true);
+	wp_enqueue_script('eccentrik_ui');
+	wp_localize_script( 'eccentrik_ui', 'themeDirURI', get_stylesheet_directory_uri() ) ;
+}
+
+add_action( 'wp_enqueue_scripts', 'eccentrik_ui_function' );
+
+function my_plugin_editor_scripts() {
+
+	wp_register_script('editor-script-1', get_stylesheet_directory_uri() . '/uicontrol.js', array( 'jquery' ),'1.0', true);
+	wp_enqueue_script('editor-script-1');
+	wp_localize_script( 'editor-script-1', 'themeDirURI', get_stylesheet_directory_uri() ) ;
+
+}
+
+add_action( 'elementor/editor/after_enqueue_scripts', 'my_plugin_editor_scripts' );
 
 function your_thumbnail_sizes() {
 	global $_wp_additional_image_sizes;

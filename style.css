@@ -141,6 +141,22 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     overflow-y: hidden;
 }
 
+.eccent_standard_overlay .elementor-background-overlay {
+    background: linear-gradient(353.58deg, rgba(109, 203, 255, 0.9) 17.88%, rgba(51, 161, 253, 0.9) 32.41%, rgba(33, 118, 255, 0.9) 61.21%, rgba(33, 48, 181, 0.9) 94.7%);
+}
+
+.eccent_standard_overlay .elementor-widget-wrap .elementor-background-overlay {
+    background: transparent !important;
+}
+
+.eccent_sub_hero .elementor-background-overlay {
+    background: linear-gradient(261.19deg, rgba(185, 230, 255, 0.9) -11.94%, rgba(109, 203, 255, 0.9) 5.07%, rgba(51, 161, 253, 0.9) 28.18%, rgba(33, 118, 255, 0.9) 55.67%, rgba(33, 48, 181, 0.9) 91.13%);
+}
+
+.eccent_sub_hero .elementor-widget-wrap .elementor-background-overlay {
+    background: transparent !important;
+}
+
 .eccent_highlight {
     color: #FDCA40;
 }
@@ -182,7 +198,161 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     filter: invert(31%) sepia(93%) saturate(1430%) hue-rotate(203deg) brightness(102%) contrast(102%);
 }
 
+.cdcn_testimonials {
+    display: block;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cdcn_testimonials_module {
+    display: block;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFF;
+    height: auto;
+}
+
+.cdcn_testimonials_inner {
+    display: block;
+    width: 100%;
+    position:relative;
+    background-color: transparent;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding:0;
+}
+
+.cdcn_testimonials_content_holder {
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    height: auto;
+}
+
+.cdcn_testimonials_content_holder .cdcn_testimonials_slide {
+    display: block;
+    width: 0px;
+    height: auto;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.cdcn_testimonials_content_holder .cdcn_testimonials_slide .cdcn_tslide_imagelink {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    text-decoration: none;
+    background-color: #000;
+    margin-bottom: 24px;
+}
+
+.cdcn_testimonials_content_holder .cdcn_testimonials_slide .cdcn_tslide_titlelink {
+    display: block;
+    font-family: "Livvic", Sans-serif !important;
+    color: #222;
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+
+.cdcn_testimonials_content_holder .cdcn_testimonials_slide .cdcn_tslide_imagelink img {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.cdcn_testimonials_content_holder .cdcn_testimonials_slide p {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #555;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding:0;
+}
+
+.cdcn_tesimonials_arrow {
+    -webkit-transition: all 0.3s 0s ease !important;
+    -moz-transition: all 0.3s 0s ease !important;
+    -o-transition: all 0.3s 0s ease !important;
+    transition: all 0.3s 0s ease !important;
+    display: inline-block;
+    background-color: #2176FF;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+}
+
+.cdcn_tesimonials_arrow:hover, .cdcn_tesimonials_arrow:active, .cdcn_tesimonials_arrow:focus {
+    background-color: #FDCA40;
+}
+
+.cdcn_tesimonials_arrow:hover img, .cdcn_tesimonials_arrow:active img, .cdcn_tesimonials_arrow:focus img {
+    -webkit-transition: all 0.3s 0s ease !important;
+    -moz-transition: all 0.3s 0s ease !important;
+    -o-transition: all 0.3s 0s ease !important;
+    transition: all 0.3s 0s ease !important;
+    filter: invert(40%) sepia(76%) saturate(3796%) hue-rotate(208deg) brightness(101%) contrast(108%);
+}
+
+.cdcn_tesimonials_arrow img {
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(142deg) brightness(107%) contrast(103%);
+}
+
+.cdcn_tesimonials_arrow.ct_left {
+    left:0;
+}
+
+.cdcn_tesimonials_arrow.ct_right {
+    right:0;
+}
+
 @media(max-width: 767.9px) {
+    .cdcn_tesimonials_arrow {
+        width: 35px;
+        height: 35px;
+    }
+
+    .cdcn_tesimonials_arrow img {
+        width: auto;
+        height: 15px;
+    }
+
+    .cdcn_testimonials_module {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
     .eccent_ui_container {
         padding-left: 30px;
         padding-right: 30px;
@@ -235,6 +405,21 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 }
 
 @media(min-width: 768px) and (max-width: 1024.9px) {
+    .cdcn_tesimonials_arrow {
+        width: 45px;
+        height: 45px;
+    }
+
+    .cdcn_tesimonials_arrow img {
+        width: auto;
+        height: 17px;
+    }
+
+    .cdcn_testimonials_module {
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+
     .eccent_ui_container {
         padding-left: 50px;
         padding-right: 50px;
@@ -250,6 +435,21 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 }
 
 @media(min-width: 1025px) {
+
+    .cdcn_tesimonials_arrow {
+        width: 52px;
+        height: 52px;
+    }
+
+    .cdcn_tesimonials_arrow img {
+        width: auto;
+        height: 17px;
+    }
+
+    .cdcn_testimonials_module {
+        padding-right: 90px;
+        padding-left: 90px;
+    }
 
     .eccent_header_toggle {
         display: none;
