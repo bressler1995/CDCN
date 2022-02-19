@@ -314,6 +314,12 @@ jQuery(document).ready(function($){
         let finalstring = '';
         console.log("Title: " + titleParam + ", Description: " + descParam + ", Link: " + linkParam);
 
+        if(eccent_mobile_wrapper != null) {
+            if(eccent_mobile_wrapper.classList.contains("show") == true) {
+                close_navigation();
+            }
+        }
+
         if(linkParam.includes('youtube.com/watch?v=')) {
             linkpass = true;
             splitresult = linkParam.split("watch?v=");
@@ -420,6 +426,30 @@ jQuery(document).ready(function($){
                 }
             }
         }, 150);
+
+        setTimeout(function(){
+            if(eccent_mobile_social != null) {
+                let eccent_mobile_social_a = eccent_mobile_social.getElementsByTagName("a");
+
+                if(eccent_mobile_social_a != null) {
+                    if(eccent_mobile_social_a.length > 0) {
+                        for(i = 0; i < eccent_mobile_social_a.length; i++) {
+                            let thecurrentitem = eccent_mobile_social_a[i];
+
+                            setTimeout(function(){
+                                if(thecurrentitem.classList.contains("show") == false) {
+                                    thecurrentitem.classList.add("show");
+                                }
+                            }, (i * 200));
+                        }
+                    }
+                }
+            }
+        }, 300);
+
+        if(cdcn_vlb_overlay.classList.contains("show") == true) {
+            close_vlightbox();
+        }
     }
 
     function close_navigation() {
@@ -452,7 +482,25 @@ jQuery(document).ready(function($){
                     eccent_mobile_controls.classList.remove("show");
                 }
             }
-        }, 500);
+
+            if(eccent_mobile_social != null) {
+                let eccent_mobile_social_a = eccent_mobile_social.getElementsByTagName("a");
+
+                if(eccent_mobile_social_a != null) {
+                    if(eccent_mobile_social_a.length > 0) {
+                        for(i = 0; i < eccent_mobile_social_a.length; i++) {
+                            let thecurrentitem = eccent_mobile_social_a[i];
+
+                            setTimeout(function(){
+                                if(thecurrentitem.classList.contains("show") == true) {
+                                    thecurrentitem.classList.remove("show");
+                                }
+                            }, (i * 200));
+                        }
+                    }
+                }
+            }
+        }, 400);
     }
 
     function handleGesture() {

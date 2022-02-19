@@ -1,9 +1,9 @@
 /* 
 Theme Name: CDCN
 Theme URI: https://github.com/elementor/hello-theme/
-Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
-Author: Elementor Team
-Author URI: https://elementor.com/
+Description: Be careful not to uninstall hello elementor parent theme. Enjoy. 
+Author: Brian C. Ressler
+Author URI: https://briancressler.com
 Template: hello-elementor
 Version: 1.0
 Text Domain: hello-elementor-child
@@ -778,10 +778,20 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 .eccent_mobile_wrapper .menu-main-menu-container {
     display: flex !important;
     width: 100%;
-    height: 70%;
+    height: 64%;
     flex-flow: column wrap;
     justify-content: center;
     z-index: 2;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media (orientation: landscape) and (max-width: 899.9px) {
+    .eccent_mobile_wrapper .menu-main-menu-container {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        justify-content: flex-start !important;
+    }
 }
 
 ul.eccent_mobile_menu {
@@ -820,7 +830,7 @@ ul.eccent_mobile_menu li.menu-item a {
     flex-flow: row wrap;
     box-sizing: border-box;
     width: 100%;
-    padding: 17px;
+    padding: 15px;
     color: #FFF;
     justify-content: flex-start;
     align-items: center;
@@ -861,7 +871,7 @@ ul.eccent_mobile_menu span.menu-image-title {
     justify-content: flex-start;
     align-items: flex-end;
     width: 100%;
-    height: 15%;
+    height: 18%;
     box-sizing: border-box;
     z-index: 3;
     left:0;
@@ -876,7 +886,7 @@ ul.eccent_mobile_menu span.menu-image-title {
     display: block;
     position: relative;
     width: 100%;
-    height: 15%;
+    height: 18%;
     box-sizing: border-box;
     z-index: 1;
     transform-origin: center;
@@ -910,6 +920,7 @@ ul.eccent_mobile_menu span.menu-image-title {
     border: none;
     border-radius: 5px;
     z-index: 3;
+    margin-top: 5px;
 }
 
 .eccent_mobile_controls button.eccent_mobile_close:hover, .eccent_mobile_controls button.eccent_mobile_close:active, .eccent_mobile_controls button.eccent_mobile_close:focus {
@@ -928,6 +939,10 @@ ul.eccent_mobile_menu span.menu-image-title {
 }
 
 .eccent_mobile_social a {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
     display: inline-block;
     position: relative;
     width: 47px;
@@ -937,6 +952,18 @@ ul.eccent_mobile_menu span.menu-image-title {
     background-color: #2176FF;
     margin-right: 10px;
     margin-bottom: 7px;
+    transform-origin: center;
+    transform: scale(0.2);
+    opacity: 0;
+}
+
+.eccent_mobile_social a:hover, .eccent_mobile_social a:active, .eccent_mobile_social a:focus {
+    background-color: rgba(33, 118, 255, 0.7);
+}
+
+.eccent_mobile_social a.show {
+    transform: scale(1.0) !important;
+    opacity: 1 !important;
 }
 
 .eccent_mobile_social a img {
@@ -951,8 +978,87 @@ ul.eccent_mobile_menu span.menu-image-title {
     filter: invert(100%) sepia(40%) saturate(0%) hue-rotate(74deg) brightness(112%) contrast(101%);
 }
 
+.eccent_contact_block a.elementor-icon {
+    -webkit-transition: all 0.5s 0s ease !important;
+    -moz-transition: all 0.5s 0s ease !important;
+    -o-transition: all 0.5s 0s ease !important;
+    transition: all 0.5s 0s ease !important;
+    display: inline-block;
+    position: relative;
+    border: none;
+    background-color: #2176ff;
+}
+
+.eccent_contact_block a.elementor-icon:before {
+    -webkit-transition: all 0.5s 0s ease !important;
+    -moz-transition: all 0.5s 0s ease !important;
+    -o-transition: all 0.5s 0s ease !important;
+    transition: all 0.5s 0s ease !important;
+    border-bottom-color: #2176ff !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .eccent_contact_block a.elementor-icon:after {
+    -webkit-transition: all 0.5s 0s ease !important;
+    -moz-transition: all 0.5s 0s ease !important;
+    -o-transition: all 0.5s 0s ease !important;
+    transition: all 0.5s 0s ease !important;
+    border-top-color: #2176ff !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.eccent_contact_block a.elementor-icon:hover {
+    background-color: #fdca40 !important;
+}
+
+.eccent_contact_block a.elementor-icon:hover:after {
+    border-top-color: #FDCA40 !important;
+}
+
+.eccent_contact_block a.elementor-icon:hover:before {
+    border-bottom-color: #FDCA40 !important;
+}
 
 @media(max-width: 767.9px) {
+
+    .eccent_contact_block a.elementor-icon {
+        width: 75px; 
+        height: 43.30px;
+        margin: 21.65px 0;
+        transform-origin: center;
+      }
+    
+      .eccent_contact_block a.elementor-icon svg {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin:0;
+          padding:0;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+      }
+    
+      .eccent_contact_block a.elementor-icon:before, .eccent_contact_block a.elementor-icon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 37.5px solid transparent;
+        border-right: 37.5px solid transparent;
+      }
+    
+      .eccent_contact_block a.elementor-icon:before {
+        bottom: 100%;
+        border-bottom: 21.65px solid;
+      }
+    
+      .eccent_contact_block a.elementor-icon:after {
+        top: 100%;
+        width: 0;
+        border-top: 21.65px solid;
+      }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type .eccent_mobile_wrapper {
         padding: 30px;
@@ -1038,7 +1144,7 @@ ul.eccent_mobile_menu span.menu-image-title {
     }
 	
 	.eccent_video .elementor-fit-aspect-ratio {
-		height: 350px;
+		height: 330px;
 	}
 	
 	.eccent_zone_hex .elementor-widget-container { 
@@ -1104,6 +1210,43 @@ ul.eccent_mobile_menu span.menu-image-title {
 }
 
 @media(min-width: 768px) {
+    .eccent_contact_block a.elementor-icon {
+        width: 55px; 
+        height: 31.75px;
+        margin: 15.88px 0;
+        transform-origin: center;
+      }
+    
+      .eccent_contact_block a.elementor-icon svg {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin:0;
+          padding:0;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+      }
+    
+      .eccent_contact_block a.elementor-icon:before, .eccent_contact_block a.elementor-icon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 27.5px solid transparent;
+        border-right: 27.5px solid transparent;
+      }
+    
+      .eccent_contact_block a.elementor-icon:before {
+        bottom: 100%;
+        border-bottom: 15.88px solid;
+      }
+    
+      .eccent_contact_block a.elementor-icon:after {
+        top: 100%;
+        width: 0;
+        border-top: 15.88px solid;
+      }
+
     .eccent_header_phone span {
         display: inline-block;
     }
@@ -1319,6 +1462,10 @@ ul.eccent_mobile_menu span.menu-image-title {
         font-weight: 500;
         text-transform: uppercase;
         position: relative;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a span.menu-image-title {
+        padding:0 !important;
     }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a img {
