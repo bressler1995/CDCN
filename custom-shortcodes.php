@@ -74,10 +74,11 @@
     add_shortcode('cdcn_videos', 'cdcn_videos_function');
 
     function cdcn_videos_function() {
-        $cdcn_videos_perpage = 13;
+        $cdcn_videos_perpage = 16;
         $cdcn_videos_output = '';
 
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
         $cdcn_videos_param = array( 'posts_per_page'=>$cdcn_videos_perpage,
             'post_type'=>'video',
             'post_status' => 'publish',

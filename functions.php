@@ -43,6 +43,71 @@ function my_plugin_editor_scripts() {
 
 add_action( 'elementor/editor/after_enqueue_scripts', 'my_plugin_editor_scripts' );
 
+function cdcn_customizer_register( $wp_customize ) {
+	$wp_customize->add_setting( 'cdcn_setting_headerphone' , array(
+		'default'   => '(000) 000-0000',
+		'transport' => 'refresh',
+	));
+
+	$wp_customize->add_setting( 'cdcn_setting_headerfacebook' , array(
+		'default'   => 'https://facebook.com',
+		'transport' => 'refresh',
+	));
+
+	$wp_customize->add_setting( 'cdcn_setting_headerlinkedin' , array(
+		'default'   => 'https://linkedin.com',
+		'transport' => 'refresh',
+	));
+
+	$wp_customize->add_setting( 'cdcn_setting_headeryoutube' , array(
+		'default'   => 'https://youtube.com',
+		'transport' => 'refresh',
+	));
+
+	$wp_customize->add_section( 'cdcn_setting_header_section' , array(
+		'title'      => __( 'CDCN Header Settings' ),
+		'priority'   => 30,
+	));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'cdcn_setting_headerphone_control', array(
+
+		'label'          => __( 'Header Phone Number' ),
+		'section'        => 'cdcn_setting_header_section',
+		'settings'       => 'cdcn_setting_headerphone',
+		'type'           => 'text'
+
+	)));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'cdcn_setting_headerfacebook_control', array(
+
+		'label'          => __( 'Mobile Menu Facebook Link' ),
+		'section'        => 'cdcn_setting_header_section',
+		'settings'       => 'cdcn_setting_headerfacebook',
+		'type'           => 'text'
+
+	)));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'cdcn_setting_headerlinkedin_control', array(
+
+		'label'          => __( 'Mobile Menu LinkedIn Link' ),
+		'section'        => 'cdcn_setting_header_section',
+		'settings'       => 'cdcn_setting_headerlinkedin',
+		'type'           => 'text'
+
+	)));
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'cdcn_setting_headeryoutube_control', array(
+
+		'label'          => __( 'Mobile Menu Youtube Link' ),
+		'section'        => 'cdcn_setting_header_section',
+		'settings'       => 'cdcn_setting_headeryoutube',
+		'type'           => 'text'
+
+	)));
+}
+
+add_action( 'customize_register', 'cdcn_customizer_register' );
+
 function your_thumbnail_sizes() {
 	global $_wp_additional_image_sizes;
 	$sizes = array();

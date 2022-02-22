@@ -22,6 +22,7 @@ jQuery(document).ready(function($){
     let eccent_mobile_close = document.getElementById("eccent_mobile_close");
     let eccent_mobile_controls = document.getElementById("eccent_mobile_controls");
     let eccent_mobile_social = document.getElementById("eccent_mobile_social");
+    let cdcn_languages_footer = document.getElementById("cdcn_languages_footer");
     let touchstartX = 0;
     let touchendX = 0;
     
@@ -31,6 +32,30 @@ jQuery(document).ready(function($){
     } else {
         console.log("Editor Mode Detected");
         check_elementor_container();
+    }
+
+    if(cdcn_languages_footer != null) {
+        let languageslinks = cdcn_languages_footer.getElementsByTagName("a");
+        console.log(languageslinks);
+
+        if(languageslinks != null) {
+            if(languageslinks.length > 0) {
+                let firstlanguagelink = languageslinks[0];
+                let thesrc = firstlanguagelink.href;
+                console.log(firstlanguagelink);
+                console.log(thesrc);
+                
+                if(thesrc.includes("/es")) {
+                    let languagesplit = thesrc.split("/es");
+
+                    if(languagesplit != null) {
+                        if(languagesplit.length == 2) {
+                            firstlanguagelink.href = languagesplit[0];
+                        }
+                    }
+                }
+            }
+        }
     }
 
     if(ct_left != null) {
@@ -445,7 +470,7 @@ jQuery(document).ready(function($){
                     }
                 }
             }
-        }, 300);
+        }, 500);
 
         if(cdcn_vlb_overlay.classList.contains("show") == true) {
             close_vlightbox();

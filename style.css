@@ -16,6 +16,10 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     Add your custom styles here
 */
 
+body, html {
+    overflow-x: hidden;
+}
+
 .eccent_header {
     display: block;
     width: 100%;
@@ -169,7 +173,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     transition: all 0.3s 0s ease;
     border: 2px solid #FFF;
     width: 50px;
-    height: 54px;
+    height: 52px;
     background-color: rgba(255, 255, 255, 0);
     position: relative;
     border-radius: 7px;
@@ -804,15 +808,15 @@ ul.eccent_mobile_menu {
 }
 
 ul.eccent_mobile_menu li.menu-item {
-    -webkit-transition: all 0.4s 0s ease;
-    -moz-transition: all 0.4s 0s ease;
-    -o-transition: all 0.4s 0s ease;
-    transition: all 0.4s 0s ease;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
     display: block;
     width: 100%;
     border-bottom: 0.2px solid rgba(255, 255, 255, 0.05);
     box-sizing: border-box;
-    transform: translateX(25px);
+    transform: translateY(25px);
     opacity: 0;
 }
 
@@ -939,10 +943,10 @@ ul.eccent_mobile_menu span.menu-image-title {
 }
 
 .eccent_mobile_social a {
-    -webkit-transition: all 0.3s 0s ease;
-    -moz-transition: all 0.3s 0s ease;
-    -o-transition: all 0.3s 0s ease;
-    transition: all 0.3s 0s ease;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
     display: inline-block;
     position: relative;
     width: 47px;
@@ -1021,7 +1025,111 @@ ul.eccent_mobile_menu span.menu-image-title {
     border-bottom-color: #FDCA40 !important;
 }
 
+.eccent_clients a {
+    display: block;
+    width: 100%;
+}
+
+.trp-language-switcher > div {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #31393C;
+    border-color: #FFF;
+    background-image: none;
+    padding-left: 10px !important;
+    padding-right: 12px !important;
+    width: 130px !important;
+}
+
+.trp-language-switcher {
+    position: relative;
+}
+
+.trp-language-switcher:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url(https://brianr58.sg-host.com/wp-content/uploads/2022/02/down-arrow.svg);
+    background-size: contain;
+    z-index: 100;
+    left: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.trp-language-switcher div.trp-ls-shortcode-current-language a {
+    color: #FFF;
+}
+
+.trp-language-switcher div.trp-ls-shortcode-language a, .trp-language-switcher div.trp-ls-shortcode-current-language a {
+    color: #FFF;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+.trp-language-switcher div.trp-ls-shortcode-language {
+    background: #3f494d
+}
+
+.trp-language-switcher > div > a:hover {
+    background-color: #2176FF;
+    color: #FFF;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="tel"], textarea {
+    -webkit-transition: all 0.5s 0s ease-in-out !important;
+    -moz-transition: all 0.5s 0s ease-in-out !important;
+    -o-transition: all 0.5s 0s ease-in-out !important;
+    transition: all 0.5s 0s ease-in-out !important;
+    background-color: #FFF;
+
+}
+
+input[type="text"]:active, input[type="email"]:active, input[type="password"]:active, input[type="search"]:active, input[type="tel"]:active, textarea:active,
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, textarea:focus {
+    box-shadow: none !important;
+    background-color: #E9E9E9 !important;
+    border-color: #2176ff !important;
+}
+
+@media(min-width: 1025px) and (max-width: 1149.9px) {
+    .trp-language-switcher > div {
+        width: 42px !important;
+        padding-top: 17px !important;
+        padding-bottom: 17px !important;
+        padding-right: 5px !important;
+        margin-left: 5px !important;
+    }
+
+    .trp-language-switcher > div > a {
+        font-size: 0 !important;
+        line-height: 0 !important;
+    }
+
+    .trp-language-switcher:after {
+        display: none;
+        left: 74% !important;
+    }
+
+    .trp-language-switcher > div > a > img {
+        margin:0 !important;
+    }
+}
+
 @media(max-width: 767.9px) {
+
+    .ecc_col .trp-language-switcher{
+        display: none !important;
+    }
+
+    .ecc_col .trp-language-switcher:after {
+        display: none !important;
+    }
 
     .eccent_contact_block a.elementor-icon {
         width: 75px; 
@@ -1177,10 +1285,6 @@ ul.eccent_mobile_menu span.menu-image-title {
     }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type .eccent_mobile_wrapper {
-        -webkit-transition: all 0.5s 0s ease;
-        -moz-transition: all 0.5s 0s ease;
-        -o-transition: all 0.5s 0s ease;
-        transition: all 0.5s 0s ease;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -1190,21 +1294,23 @@ ul.eccent_mobile_menu span.menu-image-title {
         max-width: 300px;
         height: 100%;
         top: 0;
-        right: 0;
-        background-color: rgb(49, 57, 60, 0.98);
+        right: -107%;
+        background-color: rgba(49, 57, 60, 0.98);
         z-index: 1000;
         box-sizing: border-box;
         -webkit-box-shadow: 0px -2px 14px 5px rgba(0,0,0,0.3); 
         box-shadow: 0px -2px 14px 5px rgba(0,0,0,0.3);
         transform-origin: center;
-        transform: translateX(105%);
         visibility: hidden;
-        
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type .eccent_mobile_wrapper.show {
         visibility: visible !important;
-        transform: translateX(0%) !important;
+        right: 0 !important;
     }
 
 }
@@ -1305,12 +1411,12 @@ ul.eccent_mobile_menu span.menu-image-title {
 
     .cdcn_videos a.cdcn_video_item.larger {
         width: calc(66% - 24px);
-        padding-top: calc(55% + 23px);
+        padding-top: calc(57% + 23px);
     }
     
     .cdcn_videos a.cdcn_video_item {
         width: calc(33.3% - 24px);
-        padding-top: 27.5%;
+        padding-top: 28.5%;
         margin: 12px;
     }
 
@@ -1341,11 +1447,11 @@ ul.eccent_mobile_menu span.menu-image-title {
     }
 
     .eccent_header .eccent_header_row .ecc_col:first-of-type {
-        width: 50%;
+        width: 30%;
     }
     
     .eccent_header .eccent_header_row .ecc_col:last-of-type {
-        width: 50%;
+        width: 70%;
     }
 
     .eccent_video .elementor-fit-aspect-ratio {
@@ -1367,11 +1473,19 @@ ul.eccent_mobile_menu span.menu-image-title {
 @media(min-width: 1025px) {
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type .eccent_mobile_wrapper {
-        display: none;
+        display: none !important;
         width: 0;
         height: 0;
         padding: 0;
         margin: 0;
+    }
+
+    .eccent_mobile_wrapper ul.eccent_mobile_menu {
+        display: none !important;
+    }
+
+    .eccent_mobile_wrapper ul.eccent_mobile_menu li {
+        display: none !important;
     }
 
     .cdcn_vlightbox .cdcn_vlb_content .cdcn_vlb_ctext, .cdcn_vlightbox .cdcn_vlb_content .cdcn_vlb_cmedia {
@@ -1448,10 +1562,10 @@ ul.eccent_mobile_menu span.menu-image-title {
     }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a {
-        -webkit-transition: all 0.3s 0s ease;
-        -moz-transition: all 0.3s 0s ease;
-        -o-transition: all 0.3s 0s ease;
-        transition: all 0.3s 0s ease;
+        -webkit-transition: color 0.3s 0s ease;
+        -moz-transition: color 0.3s 0s ease;
+        -o-transition: color 0.3s 0s ease;
+        transition: color 0.3s 0s ease;
         display: block;
         padding: 12px;
         padding-top: 15px;
@@ -1465,7 +1579,22 @@ ul.eccent_mobile_menu span.menu-image-title {
     }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a span.menu-image-title {
+        -webkit-transition: color 0.3s 0s ease;
+        -moz-transition: color 0.3s 0s ease;
+        -o-transition: color 0.3s 0s ease;
+        transition: color 0.3s 0s ease;
+        color: #FFF;
         padding:0 !important;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:hover span.menu-image-title, 
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:active span.menu-image-title,
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:focus span.menu-image-title {
+        color: #FDCA40;
+    }
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li.current-menu-item a span.menu-image-title {
+        color: #FDCA40;
     }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a img {
@@ -1509,12 +1638,6 @@ ul.eccent_mobile_menu span.menu-image-title {
         opacity: 1;
     }
 
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:hover, 
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:active,
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:focus {
-        color: #FDCA40;
-    }
-
     /* End Desktop Menu */
 
     .eccent_ui_container {
@@ -1523,11 +1646,11 @@ ul.eccent_mobile_menu span.menu-image-title {
     }
 
     .eccent_header .eccent_header_row .ecc_col:first-of-type {
-        width: 18%;
+        width: 15%;
     }
     
     .eccent_header .eccent_header_row .ecc_col:last-of-type {
-        width: 82%;
+        width: 85%;
     }
 
     .eccent_home_hero_image .elementor-widget-container img {
