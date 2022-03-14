@@ -203,6 +203,60 @@ body, html {
     filter: invert(31%) sepia(93%) saturate(1430%) hue-rotate(203deg) brightness(102%) contrast(102%);
 }
 
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:hover span.menu-image-title, 
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:active span.menu-image-title,
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:focus span.menu-image-title {
+        color: #FDCA40;
+}
+
+    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li.current-menu-item a span.menu-image-title {
+        color: #FDCA40;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a {
+    display: block;
+    padding: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a:hover, .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a:active, .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a:focus {
+    -webkit-transition: color 0.3s 0s ease;
+    -moz-transition: color 0.3s 0s ease;
+    -o-transition: color 0.3s 0s ease;
+    transition: color 0.3s 0s ease;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a span.menu-image-title {
+    color: #FFF;
+    padding:0 !important;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a:hover span.menu-image-title, .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a:active span.menu-image-title, .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a:focus span.menu-image-title {
+    -webkit-transition: color 0.3s 0s ease;
+    -moz-transition: color 0.3s 0s ease;
+    -o-transition: color 0.3s 0s ease;
+    transition: color 0.3s 0s ease;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li.current-menu-item a {
+    color: #FDCA40;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
 .cdcn_testimonials {
     display: block;
     width: 100%;
@@ -738,7 +792,7 @@ body, html {
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    padding-top: 45px;
+    padding-top: 35px;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
@@ -1040,7 +1094,7 @@ ul.eccent_mobile_menu span.menu-image-title {
     background-image: none;
     padding-left: 10px !important;
     padding-right: 12px !important;
-    width: 130px !important;
+    width: 135px !important;
 }
 
 .trp-language-switcher {
@@ -1097,7 +1151,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     border-color: #2176ff !important;
 }
 
-@media(min-width: 1025px) and (max-width: 1149.9px) {
+.cdcn_paragraph a {
+    color: #2176ff;
+    text-decoration: underline;
+}
+
+.cdcn_paragraph a:hover, .cdcn_paragraph a:active, .cdcn_paragraph a:focus {
+    opacity: 0.6;
+}
+
+@media(min-width: 1025px) and (max-width: 1155.9px) {
     .trp-language-switcher > div {
         width: 42px !important;
         padding-top: 17px !important;
@@ -1550,51 +1613,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         position: relative;
     }
 
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li {
-        display: inline-block;
-        width: auto;
-        margin-right: 10px;
-        box-sizing: border-box;
-    }
-
     .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:last-of-type {
         margin-right: 0;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a {
-        -webkit-transition: color 0.3s 0s ease;
-        -moz-transition: color 0.3s 0s ease;
-        -o-transition: color 0.3s 0s ease;
-        transition: color 0.3s 0s ease;
-        display: block;
-        padding: 12px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        color: #FFF;
-        font-size: 14px;
-        line-height: 18px;
-        font-weight: 500;
-        text-transform: uppercase;
-        position: relative;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a span.menu-image-title {
-        -webkit-transition: color 0.3s 0s ease;
-        -moz-transition: color 0.3s 0s ease;
-        -o-transition: color 0.3s 0s ease;
-        transition: color 0.3s 0s ease;
-        color: #FFF;
-        padding:0 !important;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:hover span.menu-image-title, 
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:active span.menu-image-title,
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:focus span.menu-image-title {
-        color: #FDCA40;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li.current-menu-item a span.menu-image-title {
-        color: #FDCA40;
     }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a img {
@@ -1618,10 +1638,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         opacity: 0;
         background-color: #FDCA40;
         visibility: hidden;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li.current-menu-item a {
-        color: #FDCA40;
     }
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li.current-menu-item a:after {
