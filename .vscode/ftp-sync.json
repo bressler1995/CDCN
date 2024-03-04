@@ -1,8 +1,8 @@
 {
-    "remotePath": "./brianr58.sg-host.com/public_html/wp-content/themes/hello-theme-child-master/",
-    "host": "brianr58.sg-host.com",
-    "username": "carlofabyss@brianr58.sg-host.com",
-    "password": "BhMoP1940!",
+    "remotePath": "./public_html/wp-content/themes/hello-theme-child-master/",
+    "host": "",
+    "username": "",
+    "password": "",
     "port": 21,
     "secure": false,
     "protocol": "ftp",

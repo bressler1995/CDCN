@@ -439,7 +439,7 @@ body, html {
 .eccent_video .elementor-custom-embed-play {
     width: 100%;
     max-width: 75px;
-    content: url(https://brianr58.sg-host.com/wp-content/uploads/2022/01/playicon.svg);
+    content: url(https://cdcnetwork.net/wp-content/uploads/2022/01/playicon.svg);
     transition: 0.3s ease-in-out;
 }
 
@@ -1107,7 +1107,7 @@ ul.eccent_mobile_menu span.menu-image-title {
     position: absolute;
     width: 12px;
     height: 12px;
-    background-image: url(https://brianr58.sg-host.com/wp-content/uploads/2022/02/down-arrow.svg);
+    background-image: url(https://cdcnetwork.net/wp-content/uploads/2022/02/down-arrow.svg);
     background-size: contain;
     z-index: 100;
     left: 85%;
@@ -1318,6 +1318,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		height: 330px;
 	}
 	
+	.eccent_video .elementor-wrapper {
+		height: 330px !important;
+		--video-aspect-ratio: initial !important;
+		aspect-ratio: initial !important;
+	}
+	
 	.eccent_zone_hex .elementor-widget-container { 
 		top: 50%;
 	    left: 50%;
@@ -1521,6 +1527,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		height: 400px;
 	}
 	
+	.eccent_video .elementor-wrapper {
+		height: 400px !important;
+		--video-aspect-ratio: initial !important;
+		aspect-ratio: initial !important;
+	}
+	
 	.eccent_zone_hex .elementor-widget-container { 
 		top: 50%;
 	    right: 0;
@@ -1675,6 +1687,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
     .eccent_video .elementor-fit-aspect-ratio {
 		height: 450px;
+	}
+	
+	.eccent_video .elementor-wrapper {
+		height: 450px !important;
+		--video-aspect-ratio: initial !important;
+		aspect-ratio: initial !important;
 	}
 	
 	.eccent_zone_hex .elementor-widget-container { 
