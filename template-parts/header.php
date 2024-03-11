@@ -17,13 +17,6 @@ $header_nav_menu = wp_nav_menu( [
 	'menu_class' => 'eccent_desktop_menu',
 ] );
 
-$header_nav_menu_mobile = wp_nav_menu( [
-	'theme_location' => 'menu-1',
-	'fallback_cb' => false,
-	'echo' => false,
-	'menu_class' => 'eccent_mobile_menu',
-] );
-
 $logo_output = '';
 
 if( function_exists( 'the_custom_logo' ) ) {
@@ -79,15 +72,6 @@ if( function_exists( 'the_custom_logo' ) ) {
 
 					if ( $header_nav_menu ) {
 						echo $header_nav_menu;
-					}
-
-					if ( $header_nav_menu_mobile ) {
-						echo '<div id="eccent_mobile_wrapper" class="eccent_mobile_wrapper">
-							<div id="eccent_mobile_controls" class="eccent_mobile_controls">' . $logo_output . '<button id="eccent_mobile_close" class="eccent_mobile_close"><img src="' . get_stylesheet_directory_uri() . '/svg/close.svg"></button></div>' 
-							. $header_nav_menu_mobile . 
-						'<div id="eccent_mobile_social" class="eccent_mobile_social">' . 
-							$header_facebook_output . $header_linkedin_output . $header_youtube_output . 
-						'</div></div>';
 					}
 
 					echo $header_phone_output;
