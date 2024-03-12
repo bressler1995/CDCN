@@ -1326,9 +1326,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .sjb-custom-single .list-data .v2 .job-description p {
     color: #555555;
     font-family: "Montserrat", Sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 28px;
+    margin-bottom: 14px;
 }
 
 .sjb-page .pagination {
@@ -1486,6 +1487,15 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .sjb-custom-single .sjb-job-type-location-date .row .col-md-3 {
     padding: 0;
+}
+
+.sjb-custom-single .sjb-detail .list-data .v2 .jobpost-form h3 {
+    color: #222222;
+    font-family: "Livvic", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 22px;
 }
 
 @media(max-width: 991.9px) {
