@@ -1323,6 +1323,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     line-height: 26px;
 }
 
+.sjb-custom-single .list-data .v2 .job-description p {
+    color: #555555;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 .sjb-page .pagination {
     margin-top: 35px;
     list-style-type: none;
