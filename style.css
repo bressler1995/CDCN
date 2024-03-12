@@ -1421,6 +1421,22 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     height: auto;
 }
 
+.sjb-page .no-job-listing img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.sjb-page .sjb-listing .list-view .no-job-listing .no-job-listing-text {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: initial;
+    color: #222;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
 @media(max-width: 991.9px) {
     .sjb-page .sjb-filters.sjb-filters-v2 {
         padding: 30px;
