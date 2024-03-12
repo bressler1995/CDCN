@@ -1445,12 +1445,15 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .sjb-custom-single {
     display: block;
     width: 100%;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .sjb-custom-single .sjb-detail {
     display: block;
     width: 100%;
-    max-width: 1460px;
+    max-width: 1600px;
     box-sizing: border-box;
     padding-left: 70px;
     padding-right: 70px;
@@ -1459,7 +1462,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .sjb-custom-single .list-data .v2 .header-margin-top {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sjb-custom-single .sjb-job-type-location-date .row .col-md-3 {
+    padding: 0;
 }
 
 @media(max-width: 991.9px) {
