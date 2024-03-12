@@ -257,6 +257,59 @@ body, html {
     color: #FFF;
 }
 
+/* Desktop and Mobile Menus */
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu {
+    flex-flow: row wrap;
+    width: auto;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    margin-right: 20px;
+    position: relative;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:last-of-type {
+    margin-right: 0;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a img {
+    display: none;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a:after {
+    -webkit-transition: all 0.3s 0s ease;
+    -moz-transition: all 0.3s 0s ease;
+    -o-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    transform-origin: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0.1);
+    opacity: 0;
+    background-color: #FDCA40;
+    visibility: hidden;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li.current-menu-item a:after {
+    visibility: visible;
+    transform: translateX(-50%) scaleX(1.0);
+    opacity: 1;
+}
+
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:hover:after, 
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:active:after,
+.eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:focus:after {
+    visibility: visible;
+    transform: translateX(-50%) scaleX(1.0);
+    opacity: 1;
+}
+
 .eccent_mobile_wrapper {
     flex-flow: column wrap;
     justify-content: center;
@@ -1816,54 +1869,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
     .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu {
         display: flex;
-        flex-flow: row wrap;
-        width: auto;
-        list-style-type: none;
-        padding:0;
-        margin:0;
-        margin-right: 20px;
-        position: relative;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:last-of-type {
-        margin-right: 0;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a img {
-        display: none;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li a:after {
-        -webkit-transition: all 0.3s 0s ease;
-        -moz-transition: all 0.3s 0s ease;
-        -o-transition: all 0.3s 0s ease;
-        transition: all 0.3s 0s ease;
-        content: '';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2.5px;
-        transform-origin: center;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%) scaleX(0.1);
-        opacity: 0;
-        background-color: #FDCA40;
-        visibility: hidden;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li.current-menu-item a:after {
-        visibility: visible;
-        transform: translateX(-50%) scaleX(1.0);
-        opacity: 1;
-    }
-
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:hover:after, 
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:active:after,
-    .eccent_header .eccent_header_row .ecc_col:last-of-type ul.eccent_desktop_menu li:not(.current-menu-item) a:focus:after {
-        visibility: visible;
-        transform: translateX(-50%) scaleX(1.0);
-        opacity: 1;
     }
 
     /* End Desktop Menu */

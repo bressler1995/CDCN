@@ -17,4 +17,3 @@ jobs:
         port: 21
         protocol: ftp
         server-dir: public_html/wp-content/themes/hello-theme-child-master/
-        dry-run: true
