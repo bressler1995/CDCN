@@ -944,6 +944,18 @@ body, html {
         width: 40px !important;
         height: 40px !important;
     }
+
+    .eccent_mobile_controls {
+        height: 20% !important;
+    }
+
+    .eccent_mobile_social {
+        height: 20% !important;
+    }
+
+    .eccent_mobile_wrapper .menu-main-menu-container {
+        height: 60% !important;
+    }
 }
 
 ul.eccent_mobile_menu {
