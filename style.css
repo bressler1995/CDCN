@@ -1468,6 +1468,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     width: calc(100% - 88px);
 }
 
+.sjb-page:not(.sjb-custom-single) .list-data .v2 .sjb-with-logo {
+    width: calc(100% - 88px);
+}
+
 .sjb-custom-single .sjb-detail .list-data .v2 .job-detail h3 {
     display: none;
 }
