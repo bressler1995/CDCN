@@ -1464,6 +1464,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     margin-bottom: 0;
 }
 
+.sjb-custom-single .sjb-detail .list-data .v2 .job-detail h3 {
+    display: none;
+}
+
 .sjb-custom-single .sjb-job-type-location-date .row .col-md-3 {
     padding: 0;
 }
