@@ -1446,8 +1446,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     display: block;
     width: 100%;
     box-sizing: border-box;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 85px;
+    padding-bottom: 85px;
 }
 
 .sjb-custom-single .sjb-detail {
@@ -1455,8 +1455,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     width: 100%;
     max-width: 1600px;
     box-sizing: border-box;
-    padding-left: 70px;
-    padding-right: 70px;
     margin-top: 0;
     margin: 0 auto;
 }
@@ -1678,6 +1676,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .cdcn_videos_pagination {
         margin-left: 0;
     }
+
+    .sjb-custom-single .sjb-detail {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 @media(max-width: 1024.9px) {
@@ -1855,6 +1858,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		width: 540px;
 	    height: 540px;
 	}
+
+    .sjb-custom-single .sjb-detail {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 @media(min-width: 1025px) {
@@ -1973,4 +1981,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		width: 540px;
 	    height: 540px;
 	}
+
+    .sjb-custom-single .sjb-detail {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
