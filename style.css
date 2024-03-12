@@ -1442,6 +1442,21 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     margin-top: 20px;
 }
 
+.sjb-custom-single {
+    display: block;
+    margin: 0 auto;
+}
+
+.sjb-custom-single .sjb-detail {
+    display: block;
+    width: 100%;
+    max-width: 1460px;
+    box-sizing: border-box;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 0;
+}
+
 @media(max-width: 991.9px) {
     .sjb-page .sjb-filters.sjb-filters-v2 {
         padding: 30px;
