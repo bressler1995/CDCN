@@ -1388,6 +1388,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     color: #2176ff !important;
 }
 
+.sjb-page .no-job-listing a:hover, .sjb-page .no-job-listing a:active, .sjb-page .no-job-listing a:focus {
+    background-color: #FDCA40 !important;
+    color: #2176ff !important;
+}
+
 .sjb-page .list-data .sjb-job-info h4 span i {
     color: #666;
     font-size: 14px;
@@ -1427,9 +1432,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .sjb-page .sjb-listing .list-view .no-job-listing .no-job-listing-text {
-    font-size: 32px;
-    line-height: 36px;
-    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: initial;
     color: #222;
