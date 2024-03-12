@@ -1423,8 +1423,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 @media(min-width: 1025px) and (max-width: 1155.9px) {
     .trp-language-switcher > div {
         width: 42px !important;
-        padding-top: 17px !important;
-        padding-bottom: 17px !important;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
         padding-right: 5px !important;
         margin-left: 5px !important;
     }
