@@ -1332,6 +1332,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     margin-bottom: 14px;
 }
 
+.sjb-custom-single .list-data .v2 .job-description p a {
+    color: #2176ff;
+    text-decoration: underline;
+}
+
+.sjb-custom-single .list-data .v2 .job-description p a:hover, .sjb-custom-single .list-data .v2 .job-description p a:active, .sjb-custom-single .list-data .v2 .job-description p a:focus {
+    color: #2176ff;
+    opacity: 0.6;
+}
+
 .sjb-custom-single .list-data .v2 .job-description ul, .sjb-custom-single .list-data .v2 .job-description ol {
     padding-left: 2em;
     margin-top: 14px;
@@ -1349,6 +1359,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     font-size: 15px;
     font-weight: 400;
     line-height: 28px;
+}
+
+.sjb-custom-single .list-data .v2 .job-description ul li a, .sjb-custom-single .list-data .v2 .job-description ol li a {
+    color: #2176ff;
+    text-decoration: underline;
+}
+
+.sjb-custom-single .list-data .v2 .job-description ul li a:hover, .sjb-custom-single .list-data .v2 .job-description ol li a:hover, .sjb-custom-single .list-data .v2 .job-description ul li a:active, .sjb-custom-single .list-data .v2 .job-description ol li a:active, .sjb-custom-single .list-data .v2 .job-description ul li a:focus, .sjb-custom-single .list-data .v2 .job-description ol li a:focus {
+    color: #2176ff;
+    opacity: 0.6;
 }
 
 .sjb-custom-single .list-data .v2 .job-description ul li:before {
