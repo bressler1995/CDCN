@@ -1293,6 +1293,18 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     color: #222222;
 }
 
+.sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-attachment {
+    min-height: initial;
+    padding: 0;
+    border: none;
+    border-width: 0;
+}
+
+.sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-attachment:hover {
+    border:none;
+    border-color: initial;
+}
+
 .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-phone-number {
     padding-left: 52px;
 }
