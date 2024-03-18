@@ -1338,6 +1338,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     margin-bottom: 14px;
 }
 
+.sjb-custom-single .list-data .v2 .job-description ul {
+    list-style-type: disc;
+}
+
+.sjb-custom-single .list-data .v2 .job-description ul li, .sjb-custom-single .list-data .v2 .job-description ol li {
+    padding-left: 0;
+}
+
 .sjb-custom-single .list-data .v2 .job-description ul li:before {
     display: none;
 }
