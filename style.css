@@ -1291,6 +1291,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     min-height: 47px;
     padding: 6px 16px;
     color: #222222;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-attachment {
@@ -1298,6 +1300,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     padding: 0;
     border: none;
     border-width: 0;
+    border-radius: 0px;
 }
 
 .sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-attachment:hover {
