@@ -1293,6 +1293,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     color: #222222;
 }
 
+.sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-phone-number {
+    padding-left: 52px;
+}
+
 .sjb-page .sjb-filters.sjb-filters-v2 .btn-search {
     height: 47px;
     border-radius: 5px;
