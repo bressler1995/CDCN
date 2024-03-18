@@ -1313,6 +1313,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     line-height: 18px;
 }
 
+.sjb-page .sjb-detail .list-data .v2 .jobpost-form .file div {
+    border-radius: 5px;
+}
+
 .sjb-page .sjb-detail .list-data .v2 .jobpost-form .app-submit {
     margin-top: 40px;
 }
