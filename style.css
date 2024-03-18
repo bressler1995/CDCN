@@ -1279,7 +1279,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* Jobs */
 
-.sjb-page .sjb-filters.sjb-filters-v2 .form-control {
+.sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control {
     background-color: #ffffff;
     border-color: #CCCCCC;
     border-width: 1px 1px 1px 1px;
@@ -1290,6 +1290,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     line-height: 18px;
     min-height: 47px;
     padding: 6px 16px;
+    color: #222222;
 }
 
 .sjb-page .sjb-filters.sjb-filters-v2 .btn-search {
