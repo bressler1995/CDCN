@@ -1332,6 +1332,47 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     margin-bottom: 14px;
 }
 
+.sjb-custom-single .list-data .v2 .job-description h1, .sjb-custom-single .list-data .v2 .job-description h2, .sjb-custom-single .list-data .v2 .job-description h3, .sjb-custom-single .list-data .v2 .job-description h4, .sjb-custom-single .list-data .v2 .job-description h5, .sjb-custom-single .list-data .v2 .job-description h6 {
+    display: block;
+    width: 100%;
+    font-family: "Livvic", Sans-serif;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.sjb-custom-single .list-data .v2 .job-description h6 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.sjb-custom-single .list-data .v2 .job-description h5 {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.sjb-custom-single .list-data .v2 .job-description h4 {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.sjb-custom-single .list-data .v2 .job-description h3 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.sjb-custom-single .list-data .v2 .job-description h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.sjb-custom-single .list-data .v2 .job-description h1 {
+    font-size: 40px;
+    line-height: 44px;
+}
+
 .sjb-page .pagination {
     margin-top: 35px;
     list-style-type: none;
