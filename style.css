@@ -1303,6 +1303,20 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     border-radius: 0px;
 }
 
+.sjb-page .sjb-detail .list-data .v2 .jobpost-form .file {
+    padding: 0;
+    border: none;
+    height: auto;
+    box-shadow: none;
+    min-height: 35px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.sjb-page .sjb-detail .list-data .v2 .jobpost-form .app-submit {
+    margin-top: 40px;
+}
+
 .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-attachment:hover {
     border:none;
     border-color: initial;
