@@ -1332,11 +1332,26 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     margin-bottom: 14px;
 }
 
+.sjb-custom-single .list-data .v2 .job-description ul, .sjb-custom-single .list-data .v2 .job-description ol {
+    padding-left: 2em;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.sjb-custom-single .list-data .v2 .job-description ul li:before {
+    display: none;
+}
+
+.sjb-custom-single .list-data .v2 .job-description ul ul, .sjb-custom-single .list-data .v2 .job-description ol, ol {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
 .sjb-custom-single .list-data .v2 .job-description h1, .sjb-custom-single .list-data .v2 .job-description h2, .sjb-custom-single .list-data .v2 .job-description h3, .sjb-custom-single .list-data .v2 .job-description h4, .sjb-custom-single .list-data .v2 .job-description h5, .sjb-custom-single .list-data .v2 .job-description h6 {
     display: block;
     width: 100%;
     font-family: "Livvic", Sans-serif;
-    color: #222;
+    color: #222 !important;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 14px;
