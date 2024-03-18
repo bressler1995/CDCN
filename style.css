@@ -1448,24 +1448,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     object-fit: cover;
 }
 
-.sjb-custom-single .wp-block-image.size-large {
-    width: calc(50% - 14px);
-    margin-right: 14px;
-    padding-top: 75%;
-}
-
-.sjb-custom-single .wp-block-image.size-medium {
-    width: calc(33% - 14px);
-    margin-right: 14px;
-    padding-top: 75%;
-}
-
-.sjb-custom-single .wp-block-image.size-thumbnail {
-    width: calc(25% - 14px);
-    margin-right: 14px;
-    padding-top: 75%;
-}
-
 .sjb-custom-single .list-data .v2 .job-description h1, .sjb-custom-single .list-data .v2 .job-description h2, .sjb-custom-single .list-data .v2 .job-description h3, .sjb-custom-single .list-data .v2 .job-description h4, .sjb-custom-single .list-data .v2 .job-description h5, .sjb-custom-single .list-data .v2 .job-description h6 {
     display: block;
     float: left;
@@ -1887,6 +1869,24 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    .sjb-custom-single .wp-block-image.size-large {
+        width: 100%;
+        margin-right: 0;
+        padding-top: 60%;
+    }
+    
+    .sjb-custom-single .wp-block-image.size-medium {
+        width: 100%;
+        margin-right: 0;
+        padding-top: 60%;
+    }
+    
+    .sjb-custom-single .wp-block-image.size-thumbnail {
+        width: calc(50% - 14px);
+        margin-right: 14px;
+        padding-top: 35%;
+    }
 }
 
 @media(max-width: 1024.9px) {
@@ -2069,6 +2069,24 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .sjb-custom-single .wp-block-image.size-large {
+        width: calc(50% - 14px);
+        margin-right: 14px;
+        padding-top: 35%;
+    }
+    
+    .sjb-custom-single .wp-block-image.size-medium {
+        width: calc(33% - 14px);
+        margin-right: 14px;
+        padding-top: 25%;
+    }
+    
+    .sjb-custom-single .wp-block-image.size-thumbnail {
+        width: calc(25% - 14px);
+        margin-right: 14px;
+        padding-top: 20%;
+    }
 }
 
 @media(min-width: 1025px) {
@@ -2191,5 +2209,23 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .sjb-custom-single .sjb-detail {
         padding-left: 70px;
         padding-right: 70px;
+    }
+
+    .sjb-custom-single .wp-block-image.size-large {
+        width: calc(50% - 14px);
+        margin-right: 14px;
+        padding-top: 35%;
+    }
+    
+    .sjb-custom-single .wp-block-image.size-medium {
+        width: calc(33% - 14px);
+        margin-right: 14px;
+        padding-top: 25%;
+    }
+    
+    .sjb-custom-single .wp-block-image.size-thumbnail {
+        width: calc(20% - 14px);
+        margin-right: 14px;
+        padding-top: 15%;
     }
 }
