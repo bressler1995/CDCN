@@ -1295,7 +1295,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     box-shadow: none;
 }
 
-.sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-attachment {
+.sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control.sjb-attachment {
     min-height: initial;
     padding: 0;
     border: none;
