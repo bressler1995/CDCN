@@ -1344,6 +1344,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .sjb-custom-single .list-data .v2 .job-description ul li, .sjb-custom-single .list-data .v2 .job-description ol li {
     padding-left: 0;
+    color: #555555;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 14px;
 }
 
 .sjb-custom-single .list-data .v2 .job-description ul li:before {
