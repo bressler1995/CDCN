@@ -1343,7 +1343,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     line-height: 26px;
 }
 
+.sjb-custom-single .list-data .v2 .job-description {
+    overflow: auto;
+}
+
 .sjb-custom-single .list-data .v2 .job-description p {
+    display: block;
+    width: 100%;
+    float: left;
     color: #555555;
     font-family: "Montserrat", Sans-serif;
     font-size: 15px;
@@ -1363,6 +1370,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .sjb-custom-single .list-data .v2 .job-description ul, .sjb-custom-single .list-data .v2 .job-description ol {
+    display: block;
+    float: left;
+    width: 100%;
     padding-left: 2em;
     margin-top: 14px;
     margin-bottom: 14px;
@@ -1400,8 +1410,65 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     margin-bottom: 7px;
 }
 
+.sjb-custom-single .wp-block-image {
+    display: block;
+    position: relative;
+    float: left;
+    margin-bottom: 14px;
+    background-color: #000;
+}
+
+.sjb-custom-single .wp-block-image img {
+    display: block;
+    width: 100%;
+}
+
+.sjb-custom-single .wp-block-image.size-full {
+    width: 100%;
+    height: auto;
+}
+
+.sjb-custom-single .wp-block-image.size-full img {
+    position: relative;
+    height: auto;
+}
+
+.sjb-custom-single .wp-block-image:not(.size-full) {
+    width: 100%;
+    overflow: auto;
+    height: 0;
+}
+
+.sjb-custom-single .wp-block-image:not(.size-full) img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sjb-custom-single .wp-block-image.size-large {
+    width: calc(50% - 14px);
+    margin-right: 14px;
+    padding-top: 75%;
+}
+
+.sjb-custom-single .wp-block-image.size-medium {
+    width: calc(33% - 14px);
+    margin-right: 14px;
+    padding-top: 75%;
+}
+
+.sjb-custom-single .wp-block-image.size-thumbnail {
+    width: calc(25% - 14px);
+    margin-right: 14px;
+    padding-top: 75%;
+}
+
 .sjb-custom-single .list-data .v2 .job-description h1, .sjb-custom-single .list-data .v2 .job-description h2, .sjb-custom-single .list-data .v2 .job-description h3, .sjb-custom-single .list-data .v2 .job-description h4, .sjb-custom-single .list-data .v2 .job-description h5, .sjb-custom-single .list-data .v2 .job-description h6 {
     display: block;
+    float: left;
     width: 100%;
     font-family: "Livvic", Sans-serif;
     color: #222 !important;
