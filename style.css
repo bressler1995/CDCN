@@ -1905,6 +1905,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         margin-right: 14px;
         padding-top: 35%;
     }
+
+    .cdcn_custom_map iframe {
+        height: 300px;
+    }
 }
 
 @media(max-width: 1024.9px) {
@@ -1999,6 +2003,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
     .cdcn_videos_pagination {
         margin-left: 12px;
+    }
+
+    .cdcn_custom_map iframe {
+        height: 280px;
     }
 }
 
