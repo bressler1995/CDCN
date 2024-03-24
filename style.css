@@ -1489,7 +1489,35 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     line-height: 21px;
     color: #FFF;
     text-transform: capitalize;
+    text-align: center;
     margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location .zone_szone_location_address {
+    display: block;
+    width: 100%;
+    color: #FFFFFFCC;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    margin: 0;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location .zone_szone_location_statistic {
+    display: block;
+    width: 100%;
+    color: #FDCA40;
+    margin-top: 7px !important;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    line-height: 23px;
+    text-align: center;
+    margin: 0;
+    margin-top: 7px;
 }
 
 /* Jobs */
