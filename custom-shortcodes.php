@@ -159,7 +159,7 @@
             'post_status' => 'publish',
             'posts_per_page' => -1, 
             'orderby' => 'date', 
-            'order' => 'DESC',
+            'order' => 'ASC',
         );
     
         $loop = new WP_Query( $args );
