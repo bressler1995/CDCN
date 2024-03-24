@@ -1469,6 +1469,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     padding: 25px;
     border-radius: 50%;
     background-color: #FDCA40;
+    margin: 0;
 }
 
 .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location .zone_szone_location_icon img {
@@ -1477,6 +1478,18 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     height: 30px;
     border: none;
     filter: invert(46%) sepia(57%) saturate(5302%) hue-rotate(205deg) brightness(97%) contrast(108%);
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location .zone_szone_location_title {
+    display: block;
+    width: 100%;
+    font-family: "Livvic", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #FFF;
+    text-transform: capitalize;
+    margin-top: 20px;
 }
 
 /* Jobs */
