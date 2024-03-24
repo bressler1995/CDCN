@@ -181,6 +181,8 @@
                 $zone_single_output .= '<div class="cdcn_custom_single_zone">' . 
                     $the_special_zone . 
                 '</div>';
+                
+                $zones_output .= $zone_single_output;
             }
 
         endwhile;
