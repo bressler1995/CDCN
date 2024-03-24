@@ -1301,6 +1301,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     box-shadow: 5px 5px 17px -4px rgba(0, 0, 0, 0.27);
     border-radius: 5px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
@@ -1308,7 +1309,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner {
-    background-color: #000000;
+    background-color: transparent;
+    background-image: linear-gradient(230deg, #84C2F3 15%, #0F68F8 65%);
 }
 
 .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column {
@@ -1317,6 +1319,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels {
@@ -2095,6 +2098,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         text-align: center;
     }
 
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner {
+        padding: 50px 25px 50px 25px;
+    }
+
 }
 
 @media(max-width: 1024.9px) {
@@ -2362,6 +2369,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type {
         padding: 20px 20px 20px 30px;
     }
+
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner {
+        padding: 20px 20px 20px 30px;
+    }
 }
 
 @media(min-width: 1025px) {
@@ -2524,6 +2535,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner {
         min-height: 415px;
+        padding: 25px 25px 25px 35px;
     }
 
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type {
