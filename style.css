@@ -1291,8 +1291,15 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     display: block;
     width: 50%;
     box-sizing: border-box;
-    padding-right: 10px;
     padding-bottom: 20px;
+}
+
+.cdcn_custom_zones .cdcn_custom_single_zone:nth-child(odd) {
+    padding-right: 10px;
+}
+
+.cdcn_custom_zones .cdcn_custom_single_zone:nth-child(even) {
+    padding-left: 10px;
 }
 
 .cdcn_custom_single_zone_inner {
