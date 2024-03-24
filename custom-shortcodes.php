@@ -188,9 +188,9 @@
 
                             $zone_single_locations .= '<div class="zone_szone_location">
                                 <span class="zone_szone_location_icon"><img src="' . get_stylesheet_directory_uri() . '/svg/location.svg"></span>
-                                <h4 class="zone_szone_location_title">No Locations For This Zone</h4>
-                                <p class="zone_szone_location_address">We will add some soon!</p>
-                                <p class="zone_szone_location_statistic">78,000 vistors a month</p>
+                                <h4 class="zone_szone_location_title">' . $szone_location_name . '</h4>
+                                <p class="zone_szone_location_address">' . $szone_location_address . '</p>
+                                <p class="zone_szone_location_statistic">' . $szone_location_statistic . '</p>
                             </div>';
                         endwhile;
 
@@ -199,7 +199,6 @@
                             <span class="zone_szone_location_icon"><img src="' . get_stylesheet_directory_uri() . '/svg/location.svg"></span>
                             <h4 class="zone_szone_location_title">No Locations For This Zone</h4>
                             <p class="zone_szone_location_address">We will add some soon!</p>
-                            <p class="zone_szone_location_statistic">78,000 vistors a month</p>
                         </div>';
                     }
 
