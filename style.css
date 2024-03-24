@@ -1454,16 +1454,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
     display: flex;
     flex-flow: column wrap;
-    width: 100%;
     align-items: center;
-}
-
-.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location:nth-of-type(1) {
-    margin-right: 7px;
-}
-
-.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location:nth-of-type(2) {
-    margin-left: 7px;
 }
 
 .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location .zone_szone_location_icon {
@@ -2208,7 +2199,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
 
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        width: 100%;
         max-width: 350px;
+        margin-bottom: 25px;
+    }
+    
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location:last-of-type {
+        margin-bottom: 0px;
     }
 
 }
@@ -2373,6 +2370,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         line-height: 30px;
         margin-bottom: calc(25px + 4px);
     }
+
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location:nth-of-type(1) {
+        margin-right: 7px;
+    }
+    
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location:nth-of-type(2) {
+        margin-left: 7px;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 1024.9px) {
@@ -2490,6 +2495,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
 
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        width: calc(50% - 7px);
         max-width: 250px;
     }
 }
@@ -2665,18 +2671,21 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 @media(min-width: 1025px) and (max-width: 1084.9px) {
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        width: calc(50% - 7px);
         max-width: 182px;
     }
 }
 
 @media(min-width: 1085px) and (max-width: 1419.9px) {
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        width: calc(50% - 7px);
         max-width: 200px;
     }
 }
 
 @media (min-width: 1420px) {
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        width: calc(50% - 7px);
         max-width: 280px;
     }
 }
