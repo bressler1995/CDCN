@@ -1337,6 +1337,41 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     width: 71.279%;
 }
 
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    box-sizing: border-box;
+    padding: 0px 25px 0px 0px;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels p.cdcn_custom_szone_label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels p.cdcn_custom_szone_labelnumber {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 79px;
+}
+
 /* Jobs */
 
 .sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control {
