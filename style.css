@@ -1304,7 +1304,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     box-sizing: border-box;
 }
 
-.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
+.cdcn_custom_zones.zoneswhite .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
+    background-color: #FFFFFF;
+}
+
+.cdcn_custom_zones:not(.zoneswhite) .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
     background-color: #F0F0F0;
 }
 
