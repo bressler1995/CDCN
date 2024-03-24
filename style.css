@@ -1277,6 +1277,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     opacity: 0.6;
 }
 
+/* Zones */
+
+.cdcn_custom_zones {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+}
+
 /* Jobs */
 
 .sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control {

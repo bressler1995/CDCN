@@ -147,4 +147,40 @@
 
         return $result;
     }
+
+    add_shortcode('cdcn_zones', 'cdcn_zones_function');
+
+    function cdcn_zones_function() {
+        $zones_output = '';
+        $zones_count = 0;
+
+        $args = array(  
+            'post_type' => 'zone',
+            'post_status' => 'publish',
+            'posts_per_page' => -1, 
+            'orderby' => 'date', 
+            'order' => 'DESC',
+        );
+    
+        $loop = new WP_Query( $args );
+
+        while ( $loop->have_posts() ) : $loop->the_post(); 
+            $zones_count++;
+            $the_id = get_the_ID();
+            $the_special_zone = get_field("special_zone");
+
+            if( $the_special_zone ) {
+                $zones_output .= $the_special_zone;
+            }
+
+        endwhile;
+
+        wp_reset_postdata();
+
+        $result = '<div id="cdcn_custom_zones" class="cdcn_custom_zones">' . 
+            $zones_output . 
+        '</div>';
+
+        return $result;
+    }
 ?>
