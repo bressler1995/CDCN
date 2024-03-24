@@ -1440,6 +1440,47 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     text-transform: uppercase;
     letter-spacing: 0.7px;
     text-align: center;
+    margin-top: 0;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-right: 7px;
+    align-items: center;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+    max-width: 200px;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location .zone_szone_location_icon {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #FDCA40;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location .zone_szone_location_icon img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    filter: invert(46%) sepia(57%) saturate(5302%) hue-rotate(205deg) brightness(97%) contrast(108%);
 }
 
 /* Jobs */
@@ -2119,7 +2160,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner h3 {
         font-size: 30px;
         line-height: 34px;
-        margin-bottom: 30px;
+        margin-bottom: calc(30px + 4px);
     }
 
 }
@@ -2282,7 +2323,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner h3 {
         font-size: 26px;
         line-height: 30px;
-        margin-bottom: 25px;
+        margin-bottom: calc(25px + 4px);
     }
 }
 

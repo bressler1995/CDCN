@@ -177,9 +177,32 @@
             if( $the_special_zone ) {
                 if($the_special_zone == 'Yes') {
                     $zone_single_classes = 'cdcn_custom_szone special';
+                    $zone_single_locations = '';
+
+                    if( have_rows('location_special') ) {
+
+                        while( have_rows('location_special') ) : the_row();
+                            $szone_location_name = get_sub_field('location_name');
+                            $szone_location_address = get_sub_field('location_address');
+                            $szone_location_statistic = get_sub_field('location_statistic');
+
+                            $zone_single_locations .= '<div class="zone_szone_location">
+                                <span class="zone_szone_location_icon"><img src="' . get_stylesheet_directory_uri() . '/svg/location.svg"></span>
+                                <h4 class="zone_szone_location_title">No Locations For This Zone</h4>
+                                <p class="zone_szone_location_address">We will add some soon!</p>
+                            </div>';
+                        endwhile;
+
+                    } else {
+                        $zone_single_locations .= '<div class="zone_szone_location">
+                            <span class="zone_szone_location_icon"><img src="' . get_stylesheet_directory_uri() . '/svg/location.svg"></span>
+                            <h4 class="zone_szone_location_title">No Locations For This Zone</h4>
+                            <p class="zone_szone_location_address">We will add some soon!</p>
+                        </div>';
+                    }
 
                     $zone_single_inner_output = '<h3>' . $the_title . '</h3>
-                    <div class="cdcn_custom_szone_specialcontainer"></div>';
+                    <div class="cdcn_custom_szone_specialcontainer">' . $zone_single_locations . '</div>';
                 } else {
                     $zone_single_classes = 'cdcn_custom_szone';
                     $zone_single_locations = '';
@@ -187,11 +210,9 @@
                     if( have_rows('location_regular') ) {
 
                         while( have_rows('location_regular') ) : the_row();
-
                             $szone_location_name = get_sub_field('location_name');
                             $szone_location_address = get_sub_field('location_address');
                             $zone_single_locations .= '<div class="zone_szone_location"><h4>' . $szone_location_name . '</h4><p>' . $szone_location_address . '</p></div>';
-
                         endwhile;
 
                     } else {
