@@ -150,14 +150,31 @@
 
     add_shortcode('cdcn_zones', 'cdcn_zones_function');
 
-    function cdcn_zones_function() {
+    function cdcn_zones_function($_atts) {
+        $defaults = array(
+            'white' => 'false',
+            'short' => 'false',
+        );
+
+        $atts = shortcode_atts( $defaults, $_atts );
+        $the_posts_per_page = -1;
+        $the_main_zone_classes = "cdcn_custom_zones";
+
+        if($atts['white'] == "true") {
+            $the_main_zone_classes = "cdcn_custom_zones zoneswhite"; 
+        }
+
+        if($atts['short'] == "true") {
+            $the_posts_per_page = 4;
+        }
+
         $zones_output = '';
         $zones_count = 0;
 
         $args = array(  
             'post_type' => 'zone',
             'post_status' => 'publish',
-            'posts_per_page' => -1, 
+            'posts_per_page' => $the_posts_per_page, 
             'orderby' => 'date', 
             'order' => 'ASC',
         );
@@ -243,7 +260,7 @@
 
         wp_reset_postdata();
 
-        $result = '<div id="cdcn_custom_zones" class="cdcn_custom_zones">' . 
+        $result = '<div id="cdcn_custom_zones" class="' . $the_main_zone_classes . '">' . 
             $zones_output . 
         '</div>';
 
