@@ -2129,6 +2129,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         min-height: 380px;
     }
 
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner {
+        min-height: 420px;
+    }
+
 }
 
 @media(min-width: 768px) {
@@ -2515,6 +2519,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
 
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
+        min-height: 415px;
+    }
+
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner {
         min-height: 415px;
     }
 
