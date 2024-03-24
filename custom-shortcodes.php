@@ -171,12 +171,15 @@
             $zone_single_classes = '';
             
             $the_id = get_the_ID();
+            $the_title = get_the_title();
             $the_special_zone = get_field("special_zone");
 
             if( $the_special_zone ) {
                 if($the_special_zone == 'Yes') {
                     $zone_single_classes = 'cdcn_custom_szone special';
-                    $zone_single_inner_output = '';
+
+                    $zone_single_inner_output = '<h3>' . $the_title . '</h3>
+                    <div class="cdcn_custom_szone_specialcontainer"></div>';
                 } else {
                     $zone_single_classes = 'cdcn_custom_szone';
                     $zone_single_locations = '';
