@@ -181,6 +181,7 @@
                     $zone_single_classes = 'cdcn_custom_szone';
                     $zone_single_inner_output = '<div class="cdcn_custom_szone_column">
                         <div class="cdcn_custom_szone_labels"><p class="cdcn_custom_szone_label">Zone</p><p class="cdcn_custom_szone_labelnumber">' . $zones_count . '</p></div>
+                        <div class="cdcn_custom_szone_hexcontainer"><div class="cdcn_custom_szone_hexcontainer_inner"><div class="cdcn_custom_szone_hexgradient"></div></div></div>
                     </div>
                     <div class="cdcn_custom_szone_column"></div>';
                 }

@@ -1374,6 +1374,50 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     text-align: center;
 }
 
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner {
+    display: block;
+    position: absolute;
+    background: transparent;
+    z-index: 2;
+    top: 50%;
+    right: 0;
+    transform: translatey(-50%) rotate(90deg);
+    width: 540px;
+    height: 540px;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner .cdcn_custom_szone_hexgradient {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transform: rotate(-90deg) skewX(30deg) scaleY(.866);
+    width: 540px;
+    height: 540px;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner .cdcn_custom_szone_hexgradient:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background: linear-gradient(173.74deg, #E1F1FF 8.92%, #33A1FD 49.09%, #2176FF 69.51%);
+    content: '';
+}
+
 /* Jobs */
 
 .sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control {
