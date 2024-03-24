@@ -1459,10 +1459,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     align-items: center;
 }
 
-.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
-    max-width: 200px;
-}
-
 .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location .zone_szone_location_icon {
     display: inline-block;
     width: auto;
@@ -2163,6 +2159,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         margin-bottom: calc(30px + 4px);
     }
 
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        max-width: 350px;
+    }
+
 }
 
 @media(max-width: 1024.9px) {
@@ -2440,6 +2440,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner {
         padding: 20px 20px 20px 30px;
     }
+
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        max-width: 250px;
+    }
 }
 
 @media(min-width: 1025px) {
@@ -2609,4 +2613,22 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 25px 25px 25px 35px;
     }
 
+}
+
+@media(min-width: 1025px) and (max-width: 1084.9px) {
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        max-width: 182px;
+    }
+}
+
+@media(min-width: 1085px) and (max-width: 1419.9px) {
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1420px) {
+    .cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner .cdcn_custom_szone_specialcontainer .zone_szone_location {
+        max-width: 280px;
+    }
 }
