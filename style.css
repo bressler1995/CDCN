@@ -2087,6 +2087,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 0px;
     }
 
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type .zone_szone_location h4 {
+        text-align: center;
+    }
+    
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type .zone_szone_location p {
+        text-align: center;
+    }
+
 }
 
 @media(max-width: 1024.9px) {
@@ -2230,6 +2238,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels {
         padding: 0px 25px 0px 0px;
+    }
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type .zone_szone_location h4 {
+        text-align: left;
+    }
+    
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type .zone_szone_location p {
+        text-align: left;
     }
 }
 
