@@ -1326,7 +1326,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     height: auto;
     z-index: 10;
     box-sizing: border-box;
-    padding: 0px 25px 0px 0px;
 }
 
 .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels p.cdcn_custom_szone_label {
@@ -2049,6 +2048,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         width: 200px;
         height: 200px;
     }
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels {
+        padding: 0px;
+    }
 }
 
 @media(max-width: 1024.9px) {
@@ -2188,6 +2191,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner .cdcn_custom_szone_hexgradient {
         width: 540px;
         height: 540px;
+    }
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels {
+        padding: 0px 25px 0px 0px;
     }
 }
 
