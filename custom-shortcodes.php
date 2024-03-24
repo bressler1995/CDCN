@@ -166,11 +166,21 @@
 
         while ( $loop->have_posts() ) : $loop->the_post(); 
             $zones_count++;
+            $zone_single_output = '';
+            
             $the_id = get_the_ID();
             $the_special_zone = get_field("special_zone");
 
             if( $the_special_zone ) {
-                $zones_output .= $the_special_zone;
+                if($the_special_zone == 'Yes') {
+
+                } else {
+
+                }
+                
+                $zone_single_output .= '<div class="cdcn_custom_single_zone">' . 
+                    $the_special_zone . 
+                '</div>';
             }
 
         endwhile;
