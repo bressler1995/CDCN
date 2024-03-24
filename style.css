@@ -1293,6 +1293,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     box-sizing: border-box;
     padding-right: 10px;
     padding-bottom: 20px;
+}
+
+.cdcn_custom_single_zone_inner {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 415px;
     box-shadow: 5px 5px 17px -4px rgba(0, 0, 0, 0.27);
     background-color: #F0F0F0;
 }

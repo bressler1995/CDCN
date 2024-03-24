@@ -178,9 +178,11 @@
 
                 }
                 
-                $zone_single_output .= '<div class="cdcn_custom_single_zone">' . 
-                    $the_special_zone . 
-                '</div>';
+                $zone_single_output .= '<div class="cdcn_custom_single_zone">
+                    <div class="cdcn_custom_single_zone_inner">' . 
+                        $the_special_zone . 
+                    '</div>
+                </div>';
                 
                 $zones_output .= $zone_single_output;
             }
