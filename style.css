@@ -1321,7 +1321,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     background-color: #000000;
 }
 
-.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_column {
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column {
     display: flex;
     position: relative;
     align-content: center;
