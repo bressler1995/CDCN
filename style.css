@@ -1392,6 +1392,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     content: '';
 }
 
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type .zone_szone_location {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* Jobs */
 
 .sjb-page .sjb-filters.sjb-filters-v2 .form-control, .sjb-page .sjb-detail .list-data .v2 .jobpost-form .form-control {
@@ -2034,6 +2040,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type {
         width: 100%;
+        padding: 20px 20px 20px 30px;
     }
 
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner {
@@ -2052,6 +2059,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_labels {
         padding: 0px;
     }
+
 }
 
 @media(max-width: 1024.9px) {
@@ -2301,6 +2309,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         margin-right: 14px;
         padding-top: 20%;
     }
+
+    /* Zones */
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type {
+        padding: 20px 20px 20px 30px;
+    }
 }
 
 @media(min-width: 1025px) {
@@ -2459,6 +2473,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
         min-height: 415px;
+    }
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type {
+        padding: 25px 25px 25px 35px;
     }
 
 }

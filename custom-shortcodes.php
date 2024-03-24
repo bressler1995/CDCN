@@ -179,11 +179,30 @@
                     $zone_single_inner_output = '';
                 } else {
                     $zone_single_classes = 'cdcn_custom_szone';
+                    $zone_single_locations = '';
+
+                    if( have_rows('location_regular') ) {
+
+                        while( have_rows('location_regular') ) : the_row();
+
+                            $szone_location_name = get_sub_field('location_name');
+                            $szone_location_address = get_sub_field('location_address');
+                            $zone_single_locations .= '<div class="zone_szone_location"><h4>' . $szone_location_name . '</h4><p>' . $szone_location_address . '</p></div>';
+
+                        endwhile;
+
+                    } else {
+                        $zone_single_locations .= '<div class="zone_szone_location"><h4>No Locations For This Zone</h4><p>We will add some soon!</p></div>';
+                    }
+
+
                     $zone_single_inner_output = '<div class="cdcn_custom_szone_column">
                         <div class="cdcn_custom_szone_labels"><p class="cdcn_custom_szone_label">Zone</p><p class="cdcn_custom_szone_labelnumber">' . $zones_count . '</p></div>
                         <div class="cdcn_custom_szone_hexcontainer"><div class="cdcn_custom_szone_hexcontainer_inner"><div class="cdcn_custom_szone_hexgradient"></div></div></div>
                     </div>
-                    <div class="cdcn_custom_szone_column"></div>';
+                    <div class="cdcn_custom_szone_column">
+                    
+                    </div>';
                 }
                 
                 $zone_single_output = '<div class="' . $zone_single_classes . '">
