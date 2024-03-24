@@ -1298,7 +1298,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     flex-flow: row wrap;
     width: 100%;
     height: auto;
-    min-height: 415px;
     box-shadow: 5px 5px 17px -4px rgba(0, 0, 0, 0.27);
     border-radius: 5px;
     overflow: hidden;
@@ -1373,11 +1372,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     position: absolute;
     background: transparent;
     z-index: 2;
-    top: 50%;
-    right: 0;
-    transform: translatey(-50%) rotate(90deg);
-    width: 540px;
-    height: 540px;
 }
 
 .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner .cdcn_custom_szone_hexgradient {
@@ -1386,8 +1380,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     overflow: hidden;
     background: transparent;
     transform: rotate(-90deg) skewX(30deg) scaleY(.866);
-    width: 540px;
-    height: 540px;
 }
 
 .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner .cdcn_custom_szone_hexgradient:before {
@@ -2038,10 +2030,24 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type {
         width: 100%;
+        min-height: 250px;
     }
     
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type {
         width: 100%;
+    }
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner {
+        width: 200px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner .cdcn_custom_szone_hexgradient {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -2071,6 +2077,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     
     .cdcn_custom_zones .cdcn_custom_szone:nth-child(even) {
         padding-left: 0px;
+    }
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
+        min-height: 380px;
     }
 
 }
@@ -2165,6 +2175,19 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     
     .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type {
         width: 71.279%;
+    }
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner {
+        width: 540px;
+        height: 540px;
+        transform: translatey(-50%) rotate(90deg);
+        top: 50%;
+        right: 0;
+    }
+    
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type .cdcn_custom_szone_hexcontainer .cdcn_custom_szone_hexcontainer_inner .cdcn_custom_szone_hexgradient {
+        width: 540px;
+        height: 540px;
     }
 }
 
@@ -2425,6 +2448,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     
     .cdcn_custom_zones .cdcn_custom_szone:nth-child(even) {
         padding-left: 10px;
+    }
+
+    .cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
+        min-height: 415px;
     }
 
 }
