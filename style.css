@@ -1287,31 +1287,54 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     box-sizing: border-box;
 }
 
-.cdcn_custom_zones .cdcn_custom_single_zone {
+.cdcn_custom_zones .cdcn_custom_szone {
     display: block;
     width: 50%;
     box-sizing: border-box;
     padding-bottom: 20px;
 }
 
-.cdcn_custom_zones .cdcn_custom_single_zone:nth-child(odd) {
+.cdcn_custom_zones .cdcn_custom_szone:nth-child(odd) {
     padding-right: 10px;
 }
 
-.cdcn_custom_zones .cdcn_custom_single_zone:nth-child(even) {
+.cdcn_custom_zones .cdcn_custom_szone:nth-child(even) {
     padding-left: 10px;
 }
 
-.cdcn_custom_single_zone_inner {
+.cdcn_custom_zones .cdcn_custom_szone .cdcn_custom_szone_inner {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
     height: auto;
     min-height: 415px;
     box-shadow: 5px 5px 17px -4px rgba(0, 0, 0, 0.27);
-    background-color: #F0F0F0;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_inner {
+    background-color: #F0F0F0;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_inner {
+    background-color: #000000;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone.special .cdcn_custom_szone_column {
+    display: flex;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:first-of-type {
+    width: 28.721%;
+}
+
+.cdcn_custom_zones .cdcn_custom_szone:not(.special) .cdcn_custom_szone_column:last-of-type {
+    width: 71.279%;
 }
 
 /* Jobs */

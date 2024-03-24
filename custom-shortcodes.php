@@ -167,20 +167,27 @@
         while ( $loop->have_posts() ) : $loop->the_post(); 
             $zones_count++;
             $zone_single_output = '';
+            $zone_single_inner_output = '';
+            $zone_single_classes = '';
             
             $the_id = get_the_ID();
             $the_special_zone = get_field("special_zone");
 
             if( $the_special_zone ) {
                 if($the_special_zone == 'Yes') {
-
+                    $zone_single_classes = 'cdcn_custom_szone special';
+                    $zone_single_inner_output = '';
                 } else {
-
+                    $zone_single_classes = 'cdcn_custom_szone';
+                    $zone_single_inner_output = '<div class="cdcn_custom_szone_column">
+                        <div class="cdcn_custom_szone_labels"><p class="cdcn_custom_szone_label">Zone</p><p class="cdcn_custom_szone_labelnumber">' . $zones_count . '</p></div>
+                    </div>
+                    <div class="cdcn_custom_szone_column"></div>';
                 }
                 
-                $zone_single_output .= '<div class="cdcn_custom_single_zone">
-                    <div class="cdcn_custom_single_zone_inner">' . 
-                        $the_special_zone . 
+                $zone_single_output = '<div class="' . $zone_single_classes . '">
+                    <div class="cdcn_custom_szone_inner">' . 
+                        $zone_single_inner_output . 
                     '</div>
                 </div>';
                 
